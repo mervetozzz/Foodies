@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Foodies</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty">Sepetinizde Ürün Bulunmamaktadır..</string>
+    <string name="register_button">Hesabınız yok mu? <b>Kayıt Olun</b></string>
+</resources>

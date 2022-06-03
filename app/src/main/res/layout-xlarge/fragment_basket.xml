@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="basketToolbar" type="String" />
+        <variable name="totalPrice" type="com.tozzz.finalproject.entity.Basket" />
+        <variable name="basketFragment" type="com.tozzz.finalproject.fragment.BasketFragment" />
+        <variable name="basketAdapter" type="com.tozzz.finalproject.adapter.BasketAdapter" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        tools:context=".fragment.BasketFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarBasket"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@{basketToolbar}" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="557dp"
+            android:layout_height="174dp"
+            android:text="@string/empty"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBasket"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:adapter="@{basketAdapter}"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/bottomView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarBasket" />
+
+        <View
+            android:id="@+id/bottomView"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:background="@color/primaryColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="TOPLAM FİYAT :"
+            android:textColor="@color/textHeadline"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/bottomView" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:backgroundTint="@color/back"
+            android:text="ONAYLA"
+            android:textColor="@color/primaryColor"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/bottomView"
+            app:layout_constraintTop_toTopOf="@+id/bottomView" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="0 ₺"
+            android:textSize="45sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/totalPrice"
+            app:layout_constraintTop_toBottomOf="@+id/rvBasket" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

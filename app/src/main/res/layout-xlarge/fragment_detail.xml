@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="foodObject" type="com.tozzz.finalproject.entity.Foods" />
+        <variable name="detailFragment" type="com.tozzz.finalproject.fragment.DetailFragment"/>
+        <variable name="foodAdapter" type="com.tozzz.finalproject.adapter.FoodAdapter" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        tools:context="fragment.DetailFragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="700dp"
+            android:background="@drawable/back"
+            android:backgroundTint="@color/primaryColor"
+            android:rotationX="-10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarDetail" />
+
+        <ImageView
+            android:id="@+id/foodPic"
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="@+id/view2"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/view2"
+            tools:src="@drawable/tiramisu" />
+
+        <TextView
+            android:id="@+id/foodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="@{foodObject.yemek_adi}"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/textDescription"
+            android:textSize="55sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <TextView
+            android:id="@+id/foodPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@{foodObject.yemek_fiyat + '₺'}"
+            android:textColor="@color/textDescription"
+            android:textSize="50sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/foodName" />
+
+
+        <TextView
+            android:id="@+id/foodNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="77dp"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/textDescription"
+            android:textSize="45dp"
+            app:layout_constraintEnd_toStartOf="@+id/plus"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/minus"
+            app:layout_constraintTop_toBottomOf="@+id/foodPrice" />
+
+        <ImageView
+            android:id="@+id/minus"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/remove"
+            app:layout_constraintEnd_toStartOf="@+id/foodNum"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/foodPrice" />
+
+        <ImageView
+            android:id="@+id/plus"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/foodNum"
+            app:layout_constraintTop_toBottomOf="@+id/foodPrice" />
+
+        <Button
+            android:id="@+id/addBasket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="64dp"
+            android:backgroundTint="@color/primaryColor"
+            android:onClick="@{() -> detailFragment.addFood(foodObject,foodNum.getText().toString(),foodNum)}"
+            android:text="Sepete Ekle"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

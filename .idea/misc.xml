@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1315" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/drawable/add.xml" value="0.1315" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/drawable/basket.xml" value="0.1315" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/drawable/button_bg.xml" value="0.1315" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/drawable/delete.xml" value="0.1315" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/drawable/delivery.xml" value="0.162" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/drawable/edittext_bg.xml" value="0.1315" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/drawable/ic_baseline_delete_outline_24.xml" value="0.2555" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1475" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.1475" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/drawable/ic_baseline_visibility_24.xml" value="0.1475" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1315" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/drawable/remove.xml" value="0.2555" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/drawable/search.xml" value="0.2555" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout-xlarge/activity_login.xml" value="0.2" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout-xlarge/activity_main.xml" value="0.14791666666666667" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout-xlarge/activity_order.xml" value="0.2" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout-xlarge/activity_register.xml" value="0.1875" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout-xlarge/activity_splash.xml" value="0.1875" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout-xlarge/card_basket.xml" value="0.1875" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout-xlarge/card_foods.xml" value="0.1875" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout-xlarge/fragment_basket.xml" value="0.1875" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout-xlarge/fragment_confirm.xml" value="0.1875" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout-xlarge/fragment_detail.xml" value="0.2" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout-xlarge/fragment_foods.xml" value="0.1875" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout/activity_order.xml" value="0.25" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout/activity_splash_login.xml" value="0.16111111111111112" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout/card_basket.xml" value="0.25" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout/card_foods.xml" value="0.4" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout/fragment_basket.xml" value="0.264" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout/fragment_confirm.xml" value="0.25" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout/fragment_detail.xml" value="0.2" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/layout/fragment_foods.xml" value="0.25" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/menu/back_main_menu.xml" value="0.25" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/menu/menu_bottom_nav.xml" value="0.25" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/menu/search_menu.xml" value="0.25" />
+        <entry key="..\:/Users/mrvtz/AndroidStudioProjects/FinalProjectE/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.167" />
+        <entry key="app/src/main/res/layout/card_foods.xml" value="0.2801418439716312" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
